@@ -1,0 +1,151 @@
+.plus-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
+}
+.plus-button:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.cancel-button {
+  background-color: #dc3545; /* Red color for cancel button */
+}
+
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Adjust the minimum width as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items as needed */
+  max-width: 1000px; /* Set a max-width to prevent the grid from extending indefinitely */
+}
+
+.grid-item {
+  background-color: #545353; /* Set the background color of grid items */
+  padding: 20px; /* Adjust the padding of grid items as needed */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+}
+
+.grid-item:hover {
+  transform: scale(1.05); /* Scale up grid items on hover */
+}
+
+.playlists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-item.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.delete-button {
+  top: 5px;
+  float: right;
+  margin-left: 110px;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+}
+
+.delete-button:hover {
+  color: #ff0000;
+}
+
+.grid-item:hover .delete-button {
+  display: block; /* Show the delete button when grid item is hovered over */
+}

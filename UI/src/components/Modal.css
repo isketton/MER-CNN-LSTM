@@ -1,0 +1,49 @@
+.modal-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Initially scale down */
+  transition: transform 0.3s ease; /* Add transition effect */
+  z-index: 9999; /* Ensure the modal appears on top of other content */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set maximum width for the modal */
+  padding: 1000px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.modal-popup.active {
+  transform: translate(-50%, -50%) scale(1); /* Scale up when active */
+}
+
+.modal-content {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+  color: black;
+}
+
+.modal-content p {
+  margin: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-button:hover {
+  color: #ff0000; /* Change color on hover if desired */
+}

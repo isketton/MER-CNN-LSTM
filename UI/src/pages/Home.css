@@ -1,0 +1,68 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Adjust the minimum width as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items as needed */
+  max-width: 1000px; /* Set a max-width to prevent the grid from extending indefinitely */
+}
+
+.grid-item {
+  background-color: #545353; /* Set the background color of grid items */
+  padding: 20px; /* Adjust the padding of grid items as needed */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add box shadow for a subtle effect */
+  transition: transform 0.2s ease-in-out; /* Add transition effect for smooth scaling */
+}
+
+.grid-item:hover {
+  transform: scale(1.05); /* Scale up grid items on hover */
+}
+
+.emotion-bubble {
+  display: inline-block;
+  padding: 5px 10px; /* Adjust the padding of the emotion bubble */
+  border-radius: 20px; /* Adjust the border-radius of the emotion bubble */
+  font-size: 14px; /* Adjust the font size of the emotion text */
+  font-weight: bold; /* Add bold font weight to the emotion text */
+  text-transform: uppercase; /* Convert emotion text to uppercase */
+  color: #fff; /* Set the text color of the emotion text */
+}
+
+.search-bar {
+  border-radius: 20px;
+  margin-top: 5px;
+  width: 750px;
+  background-color: #545353;
+  color: white;
+}
+
+.delete-button1 {
+  top: 5px;
+  float: right;
+  border: none;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 1;
+  padding: 0;
+}
+
+.delete-button1:hover {
+  color: #ff0000;
+}
+
+.grid-item:hover .delete-button1 {
+  display: block; /* Show the delete button when grid item is hovered over */
+}

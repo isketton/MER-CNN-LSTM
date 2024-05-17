@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+.file-drop-container {
+  text-align: center;
+}
+
+.file-drop {
+  border: 2px dashed #424141;
+  padding: 100px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif; /* Specify desired font family */
+  font-size: 18px; /* Set font size */
+  font-weight: 1000;
+  background-color: #424141;
+}
+
+.file-input {
+  display: none;
+}
+
+.folder-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.folder-btn:hover {
+  background-color: #0056b3;
+}
+
+.file-drop:hover {
+  background-color: #787777;
+}
+
+body {
+  background-color: #333; /* Dark grey background */
+  color: #fff; /* White text */
+}
+
+.predict {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.predict:hover {
+  background-color: #0056b3;
+}
