@@ -1,12 +1,33 @@
-# CS 152 MER-CNN-LSTM
+# Music Emotion Recognition: CNN-LSTM
 
-1. Start own MySQL server
+A full-stack ML system that classifies emotions from audio tracks using a CNN-LSTM deep learning model, with a React frontend and database storage.
 
-2. Open vs code
+## Features
 
-3. Go to audio_features.sql, run for own database
+- AI Model: Hybrid CNN-LSTM model in PyTorch for emotion classification (e.g., happy, sad, angry)
 
-4. once you're in the CS 152 Proj folder, in the terminal input:
+- Frontend: Interactive React dashboard for uploading songs and visualizing predictions
+
+- Backend: Python (Flask) serving model predictions via REST API
+
+- Database: Stores user uploads, predictions, and metadata (MySQL)
+
+- Dataset: Trained on PMEmo2019
+
+## Prerequisites
+- Python 3.9+
+- Docker
+
+## Installation
+1. git clone https://github.com/isketton/MER-CNN-LSTM.git
+
+2. Start own MySQL server
+
+3. Open vs code
+
+4. Go to audio_features.sql, run for own database
+
+5. once you're in the CS 152 Proj folder, in the terminal input:
 
 ```jsx
 npm i
